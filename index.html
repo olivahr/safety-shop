@@ -3,27 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SunPower Assembly - Safety Footwear</title>
+    <title>Safety Shoe's - Premium Work Footwear</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <!-- SIDE MENU -->
+    <div class="side-menu" id="sideMenu">
+        <button class="side-menu-close" onclick="closeMenu()">✕</button>
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="catalogo.html" onclick="closeMenu()">Catalog</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            <li><a href="#" onclick="alert('Terms: OSHA-compliant footwear required.'); closeMenu(); return false;">Terms</a></li>
+        </ul>
+    </div>
+
     <!-- HEADER -->
     <header>
         <nav>
-            <img src="logo.jpg" alt="SunPower Assembly" class="logo-img">
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+            <!-- Izquierda: Menú hamburguesa -->
+            <div class="menu-left">
+                <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="catalogo.html">Catalog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-icons">
-                <button class="icon-btn">👤</button>
-                <button class="icon-btn">🛒</button>
+
+            <!-- Centro: Logo/Nombre -->
+            <div class="logo-center">
+                <div class="logo-text">Safety Shoe's</div>
+            </div>
+
+            <!-- Derecha: Carrito -->
+            <div class="nav-right">
+                <button class="icon-btn" onclick="alert('Cart: 0 items')">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
             </div>
         </nav>
     </header>
@@ -44,7 +65,7 @@
             <ul>
                 <li>Select one approved model below</li>
                 <li>OSHA-compliant footwear only</li>
-                <li>Reimbursement processed on first payroll after start date</li>
+                <li>Reimbursement processed on first payroll</li>
             </ul>
         </div>
     </div>
@@ -57,6 +78,7 @@
             <!-- Safety Shoes -->
             <div class="product-card" onclick="location.href='catalogo.html#producto-1'">
                 <div class="product-image-container">
+                    <span class="product-badge">Best Seller</span>
                     <img src="safetyshoes1.jpg" alt="Safety Shoes" class="product-image">
                 </div>
                 <div class="product-info">
@@ -81,6 +103,7 @@
             <!-- CAT -->
             <div class="product-card" onclick="location.href='catalogo.html#producto-3'">
                 <div class="product-image-container">
+                    <span class="product-badge">Premium</span>
                     <img src="foto1cat.jpg" alt="CAT" class="product-image">
                 </div>
                 <div class="product-info">
@@ -117,6 +140,7 @@
             <!-- New Balance 574 -->
             <div class="product-card" onclick="location.href='catalogo.html#producto-6'">
                 <div class="product-image-container">
+                    <span class="product-badge">New</span>
                     <img src="newbalance1.jpg" alt="New Balance" class="product-image">
                 </div>
                 <div class="product-info">
@@ -140,7 +164,7 @@
                     
                     <div class="contact-item">
                         <span>📧</span>
-                        <span>safety@sunpowerassembly.com</span>
+                        <span>safety@safetyshoes.com</span>
                     </div>
                     <div class="contact-item">
                         <span>📱</span>
@@ -148,7 +172,7 @@
                     </div>
                     <div class="contact-item">
                         <span>📍</span>
-                        <span>Assembly Plant - HR Department</span>
+                        <span>HR Department - Main Office</span>
                     </div>
                     <div class="contact-item">
                         <span>🕐</span>
@@ -157,7 +181,7 @@
                 </div>
 
                 <div class="contact-form">
-                    <form onsubmit="event.preventDefault(); alert('Message sent! We will contact you soon.');">
+                    <form onsubmit="event.preventDefault(); alert('Message sent!');">
                         <div class="form-group">
                             <label>Full Name</label>
                             <input type="text" placeholder="Your name" required>
@@ -183,14 +207,29 @@
             <a href="#home">Home</a>
             <a href="catalogo.html">Catalog</a>
             <a href="#contact">Contact</a>
-            <a href="#" onclick="alert('Terms: All employees must wear OSHA-compliant footwear. Reimbursement available within 30 days.'); return false;">Terms</a>
+            <a href="#" onclick="alert('OSHA-compliant footwear required for all warehouse employees.'); return false;">Terms</a>
         </div>
-        <p>&copy; 2026 SunPower Assembly. All rights reserved.</p>
+        <p>&copy; 2026 Safety Shoe's. All rights reserved.</p>
     </footer>
 
     <script>
         function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('active');
+            document.getElementById('sideMenu').classList.toggle('active');
+            document.getElementById('overlay').classList.toggle('active');
+            document.getElementById('menuToggle').classList.toggle('active');
+        }
+
+        function closeMenu() {
+            document.getElementById('sideMenu').classList.remove('active');
+            document.getElementById('overlay').classList.remove('active');
+            document.getElementById('menuToggle').classList.remove('active');
+        }
+
+        // Cart functionality
+        let cartItems = 0;
+        function addToCart() {
+            cartItems++;
+            document.getElementById('cartCount').textContent = cartItems;
         }
     </script>
 </body>
