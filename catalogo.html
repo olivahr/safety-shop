@@ -778,21 +778,20 @@
         }
 
         // Employee ID and Size validation
-        function validateEmployeeId(productId) {
-            const empInput = document.getElementById('emp-' + productId);
-            const sizeSelect = document.getElementById('size-' + productId);
-            const button = document.getElementById('btn-' + productId);
-            
-            // Enable button if both Employee ID and Size are selected
-            if (empInput.value.trim() !== '' && sizeSelect.value !== '') {
-                button.disabled = false;
-                button.classList.add('active');
-            } else {
-                button.disabled = true;
-                button.classList.remove('active');
-            }
-        }
-
+function validateEmployeeId(productId) {
+    const empInput = document.getElementById('emp-' + productId);
+    const sizeSelect = document.getElementById('size-' + productId);
+    const button = document.getElementById('btn-' + productId);
+    
+    // Enable button if both Employee ID and Size are selected
+    if (empInput.value.trim() !== '' && sizeSelect.value !== '') {
+        button.disabled = false;
+        button.classList.add('active');
+    } else {
+        button.disabled = true;
+        button.classList.remove('active');
+    }
+}
         // Purchase function
         function purchaseProduct(productId) {
             const productDiv = document.getElementById('producto-' + productId);
