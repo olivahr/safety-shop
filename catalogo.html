@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Zapatería Premium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">👟 Zapatería Premium</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+                <li><a href="index.html#terms">Términos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CATÁLOGO -->
+    <main class="catalog-container" id="catalogo">
+        <h1 class="section-title">Catálogo Completo</h1>
+
+        <!-- Producto 1: Safety Shoes -->
+        <div class="product-detail" id="producto-1">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <img src="imagenes/safetyshoes1.jpg" alt="Safety Shoes" class="main-image" id="main-1">
+                    <div class="thumbnail-container">
+                        <img src="imagenes/safetyshoes1.jpg" class="thumbnail active" onclick="changeImage(1, 'safetyshoes1.jpg', this)">
+                        <img src="imagenes/safetyshoes2.jpg" class="thumbnail" onclick="changeImage(1, 'safetyshoes2.jpg', this)">
+                        <img src="imagenes/safetyshoes3.jpg" class="thumbnail" onclick="changeImage(1, 'safetyshoes3.jpg', this)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Industrial</span>
+                    <h2 class="product-title">Safety Shoes Industrial</h2>
+                    <div class="product-price-big">$89.99</div>
+                    <p class="product-description">
+                        Zapatos de seguridad industrial con punta de acero reforzada. Diseñados para 
+                        máxima protección en entornos de trabajo exigentes. Cumplen con normativas 
+                        internacionales de seguridad. Cómodos para uso prolongado de 8+ horas.
+                    </p>
+                    <button class="btn btn-cart" onclick="addToCart('Safety Shoes Industrial')">🛒 Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 2: Safe Shoes -->
+        <div class="product-detail" id="producto-2">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <img src="imagenes/safeshoes1.jpg" alt="Safe Shoes" class="main-image" id="main-2">
+                    <div class="thumbnail-container">
+                        <img src="imagenes/safeshoes1.jpg" class="thumbnail active" onclick="changeImage(2, 'safeshoes1.jpg', this)">
+                        <img src="imagenes/safeshoes2.jpg" class="thumbnail" onclick="changeImage(2, 'safeshoes2.jpg', this)">
+                        <img src="imagenes/safeshoes3.jpg" class="thumbnail" onclick="changeImage(2, 'safeshoes3.jpg', this)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Industrial</span>
+                    <h2 class="product-title">Safe Shoes Pro</h2>
+                    <div class="product-price-big">$79.99</div>
+                    <p class="product-description">
+                        Calzado de seguridad profesional con suela antideslizante certificada. 
+                        Ideal para industria ligera, almacenes y logística. Material transpirable 
+                        que mantiene tus pies frescos durante toda la jornada laboral.
+                    </p>
+                    <button class="btn btn-cart" onclick="addToCart('Safe Shoes Pro')">🛒 Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 3: CAT -->
+        <div class="product-detail" id="producto-3">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <img src="imagenes/foto1cat.jpg" alt="CAT" class="main-image" id="main-3">
+                    <div class="thumbnail-container">
+                        <img src="imagenes/foto1cat.jpg" class="thumbnail active" onclick="changeImage(3, 'foto1cat.jpg', this)">
+                        <img src="imagenes/foto2cat.jpg" class="thumbnail" onclick="changeImage(3, 'foto2cat.jpg', this)">
+                        <img src="imagenes/foto3cat.jpg" class="thumbnail" onclick="changeImage(3, 'foto3cat.jpg', this)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Casual</span>
+                    <h2 class="product-title">CAT Caterpillar</h2>
+                    <div class="product-price-big">$129.99</div>
+                    <p class="product-description">
+                        Estilo robusto y duradero de Caterpillar. Diseño casual perfecto para el día 
+                        a día con la calidad industrial que caracteriza a la marca. Cuero genuino 
+                        y suela resistente al desgaste. Disponible en varios colores.
+                    </p>
+                    <button class="btn btn-cart" onclick="addToCart('CAT Caterpillar')">🛒 Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4: Reebok Classic -->
+        <div class="product-detail" id="producto-4">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <img src="imagenes/foto1reeb.jpg" alt="Reebok" class="main-image" id="main-4">
+                    <div class="thumbnail-container">
+                        <img src="imagenes/foto1reeb.jpg" class="thumbnail active" onclick="changeImage(4, 'foto1reeb.jpg', this)">
+                        <img src="imagenes/foto2reeb.jpg" class="thumbnail" onclick="changeImage(4, 'foto2reeb.jpg', this)">
+                        <img src="imagenes/foto3reeb.jpg" class="thumbnail" onclick="changeImage(4, 'foto3reeb.jpg', this)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Deportivo</span>
+                    <h2 class="product-title">Reebok Classic</h2>
+                    <div class="product-price-big">$99.99</div>
+                    <p class="product-description">
+                        El clásico de Reebok que nunca pasa de moda. Estilo retro con tecnología 
+                        moderna para el máximo confort. Perfectos para el deporte o el ocio casual. 
+                        Amortiguación EVA para pisada suave.
+                    </p>
+                    <button class="btn btn-cart" onclick="addToCart('Reebok Classic')">🛒 Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 5: Nunbush -->
+        <div class="product-detail" id="producto-5">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <img src="imagenes/nunbush1.jpg" alt="Nunbush" class="main-image" id="main-5">
+                    <div class="thumbnail-container">
+                        <img src="imagenes/nunbush1.jpg" class="thumbnail active" onclick="changeImage(5, 'nunbush1.jpg', this)">
+                        <img src="imagenes/nunbush2.jpg" class="thumbnail" onclick="changeImage(5, 'nunbush2.jpg', this)">
+                        <img src="imagenes/nunbush3.jpg" class="thumbnail" onclick="changeImage(5, 'nunbush3.jpg', this)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Casual</span>
+                    <h2 class="product-title">Nunbush Comfort</h2>
+                    <div class="product-price-big">$69.99</div>
+                    <p class="product-description">
+                        Máximo confort para tus pies con Nunbush. Diseño ergonómico que se adapta 
+                        perfectamente a tu pisada. Ideales para trabajo de pie prolongado. 
+                        Tecnología de absorción de impactos en el talón.
+                    </p>
+                    <button class="btn btn-cart" onclick="addToCart('Nunbush Comfort')">🛒 Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 6: New Balance 574 -->
+        <div class="product-detail" id="producto-6">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <img src="imagenes/newbalance1.jpg" alt="New Balance" class="main-image" id="main-6">
+                    <div class="thumbnail-container">
+                        <img src="imagenes/newbalance1.jpg" class="thumbnail active" onclick="changeImage(6, 'newbalance1.jpg', this)">
+                        <img src="imagenes/newbalance2.jpg" class="thumbnail" onclick="changeImage(6, 'newbalance2.jpg', this)">
+                        <img src="imagenes/newbalance3.jpg" class="thumbnail" onclick="changeImage(6, 'newbalance3.jpg', this)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Deportivo</span>
+                    <h2 class="product-title">New Balance 574</h2>
+                    <div class="product-price-big">$109.99</div>
+                    <p class="product-description">
+                        El icónico modelo 574 de New Balance. Combinación perfecta de estilo y 
+                        rendimiento con la tecnología ENCAP para máxima estabilidad. Upper de 
+                        malla transpirable y gamuza premium.
+                    </p>
+                    <button class="btn btn-cart" onclick="addToCart('New Balance 574')">🛒 Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 7: New Balance Pro -->
+        <div class="product-detail" id="producto-7">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <img src="imagenes/newbalance4.jpg" alt="New Balance Pro" class="main-image" id="main-7">
+                    <div class="thumbnail-container">
+                        <img src="imagenes/newbalance4.jpg" class="thumbnail active" onclick="changeImage(7, 'newbalance4.jpg', this)">
+                        <img src="imagenes/newbalance5.jpg" class="thumbnail" onclick="changeImage(7, 'newbalance5.jpg', this)">
+                        <img src="imagenes/newbalance6.jpg" class="thumbnail" onclick="changeImage(7, 'newbalance6.jpg', this)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Deportivo</span>
+                    <h2 class="product-title">New Balance Pro</h2>
+                    <div class="product-price-big">$119.99</div>
+                    <p class="product-description">
+                        Versión profesional de New Balance para corredores serios. Amortiguación 
+                        Fresh Foam premium y soporte superior para tus entrenamientos más exigentes. 
+                        Drop de 8mm para transición natural.
+                    </p>
+                    <button class="btn btn-cart" onclick="addToCart('New Balance Pro')">🛒 Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 8: Nautica -->
+        <div class="product-detail" id="producto-8">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <img src="imagenes/nautica1.jpg" alt="Nautica" class="main-image" id="main-8">
+                    <div class="thumbnail-container">
+                        <img src="imagenes/nautica1.jpg" class="thumbnail active" onclick="changeImage(8, 'nautica1.jpg', this)">
+                        <img src="imagenes/nautica2.jpg" class="thumbnail" onclick="changeImage(8, 'nautica2.jpg', this)">
+                        <img src="imagenes/nautica3.jpg" class="thumbnail" onclick="changeImage(8, 'nautica3.jpg', this)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Casual</span>
+                    <h2 class="product-title">Nautica Navigator</h2>
+                    <div class="product-price-big">$89.99</div>
+                    <p class="product-description">
+                        Estilo náutico y elegante con Nautica. Diseño versátil que combina con 
+                        cualquier outfit casual. Materiales de alta calidad resistentes al agua 
+                        y acabado impecable. Suela antideslizante.
+                    </p>
+                    <button class="btn btn-cart" onclick="addToCart('Nautica Navigator')">🛒 Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 9: Reebok Runner -->
+        <div class="product-detail" id="producto-9">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <img src="imagenes/reebok1.jpg" alt="Reebok Runner" class="main-image" id="main-9">
+                    <div class="thumbnail-container">
+                        <img src="imagenes/reebok1.jpg" class="thumbnail active" onclick="changeImage(9, 'reebok1.jpg', this)">
+                        <img src="imagenes/reebok2.jpg" class="thumbnail" onclick="changeImage(9, 'reebok2.jpg', this)">
+                        <img src="imagenes/reebok3.jpg" class="thumbnail" onclick="changeImage(9, 'reebok3.jpg', this)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Deportivo</span>
+                    <h2 class="product-title">Reebok Runner</h2>
+                    <div class="product-price-big">$94.99</div>
+                    <p class="product-description">
+                        Zapatillas de running ligeras y transpirables. Tecnología Floatride Energy 
+                        para una pisada suave y reactiva en cada kilómetro. Upper de engineered mesh 
+                        para máxima ventilación.
+                    </p>
+                    <button class="btn btn-cart" onclick="addToCart('Reebok Runner')">🛒 Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 10: Cross -->
+        <div class="product-detail" id="producto-10">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <img src="imagenes/cross1.jpg" alt="Cross" class="main-image" id="main-10">
+                    <div class="thumbnail-container">
+                        <img src="imagenes/cross1.jpg" class="thumbnail active" onclick="changeImage(10, 'cross1.jpg', this)">
+                        <img src="imagenes/cross2.jpg" class="thumbnail" onclick="changeImage(10, 'cross2.jpg', this)">
+                        <img src="imagenes/cross3.jpg" class="thumbnail" onclick="changeImage(10, 'cross3.jpg', this)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Deportivo</span>
+                    <h2 class="product-title">Cross Training</h2>
+                    <div class="product-price-big">$84.99</div>
+                    <p class="product-description">
+                        Diseñadas para entrenamiento funcional y CrossFit. Suela plana estable para 
+                        levantamiento de pesas y suficiente flexibilidad para movimientos dinámicos. 
+                        Soporte lateral reforzado.
+                    </p>
+                    <button class="btn btn-cart" onclick="addToCart('Cross Training')">🛒 Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 11: Keen -->
+        <div class="product-detail" id="producto-11">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <img src="imagenes/keen1.jpg" alt="Keen" class="main-image" id="main-11">
+                    <div class="thumbnail-container">
+                        <img src="imagenes/keen1.jpg" class="thumbnail active" onclick="changeImage(11, 'keen1.jpg', this)">
+                        <img src="imagenes/keen2.jpg" class="thumbnail" onclick="changeImage(11, 'keen2.jpg', this)">
+                        <img src="imagenes/keen3.jpg" class="thumbnail" onclick="changeImage(11, 'keen3.jpg', this)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Outdoor</span>
+                    <h2 class="product-title">Keen Outdoor</h2>
+                    <div class="product-price-big">$139.99</div>
+                    <p class="product-description">
+                        Aventúrate con Keen. Calzado outdoor impermeable con protección reforzada 
+                        para los dedos. Perfectos para senderismo, camping y actividades al aire 
+                        libre. Suela de agarre multidireccional.
+                    </p>
+                    <button class="btn btn-cart" onclick="addToCart('Keen Outdoor')">🛒 Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html#home">Inicio</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="index.html#contact">Contacto</a>
+                <a href="index.html#terms">Términos</a>
+            </div>
+            <p>&copy; 2026 Zapatería Premium. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+            document.querySelector('.menu-toggle').classList.toggle('active');
+        }
+
+        function changeImage(productId, imageName, thumbnail) {
+            document.getElementById('main-' + productId).src = 'imagenes/' + imageName;
+            const container = thumbnail.parentElement;
+            const thumbs = container.querySelectorAll('.thumbnail');
+            thumbs.forEach(t => t.classList.remove('active'));
+            thumbnail.classList.add('active');
+        }
+
+        function addToCart(productName) {
+            alert('¡' + productName + ' añadido al carrito! 🛒');
+        }
+
+        // Scroll suave al cargar si hay hash
+        if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                setTimeout(() => {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        }
+    </script>
+</body>
+</html>
