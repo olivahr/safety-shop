@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Shoe's - Premium Work Footwear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <!-- SIDE MENU -->
+    <div class="side-menu" id="sideMenu">
+        <button class="side-menu-close" onclick="closeMenu()">✕</button>
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="catalogo.html" onclick="closeMenu()">Catalog</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            <li><a href="#" onclick="showTerms(); closeMenu(); return false;">Terms</a></li>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <!-- Left: Hamburger menu -->
+            <div class="menu-left">
+                <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- Center: Logo/Name -->
+            <div class="logo-center">
+                <div class="logo-text">Safety Shoe's</div>
+            </div>
+
+            <!-- Right: Empty (no cart) -->
+            <div class="nav-right"></div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+   <section class="hero" id="home" style="margin-top: 70px; padding: 0; background: none; height: auto;">
+    <img src="logo.jpg" alt="Safety Shoe's Banner" style="width: 100%; max-width: 100%; height: auto; display: block;">
+</section>
+
+    <!-- INFO BOX -->
+    <div class="info-section">
+        <div class="info-box">
+            <h2>Employee Safety Footwear Program</h2>
+            <p>All warehouse and assembly employees are required to wear approved safety footwear on the production floor.</p>
+            <ul>
+                <li>Select one approved model below</li>
+                <li>OSHA-compliant footwear only</li>
+                <li>Reimbursement processed on first payroll</li>
+                <li>Enter your Employee ID to enable purchase</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FEATURED PRODUCTS -->
+    <section id="featured">
+        <h2 class="section-title">Approved Models</h2>
+        <div class="products-grid">
+            
+            <!-- Safety Shoes -->
+            <div class="product-card" onclick="location.href='catalogo.html#producto-1'">
+                <div class="product-image-container">
+                    <span class="product-badge">Best Seller</span>
+                    <img src="safetyshoes1.jpg" alt="Safety Shoes" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Industrial</div>
+                    <div class="product-name">Safety Shoes Industrial</div>
+                    <div class="product-price">$89.99</div>
+                </div>
+            </div>
+
+            <!-- Safe Shoes -->
+            <div class="product-card" onclick="location.href='catalogo.html#producto-2'">
+                <div class="product-image-container">
+                    <img src="safeshoes1.jpg" alt="Safe Shoes" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Industrial</div>
+                    <div class="product-name">Safe Shoes Pro</div>
+                    <div class="product-price">$79.99</div>
+                </div>
+            </div>
+
+            <!-- CAT -->
+            <div class="product-card" onclick="location.href='catalogo.html#producto-3'">
+                <div class="product-image-container">
+                    <span class="product-badge">Premium</span>
+                    <img src="foto1cat.jpg" alt="CAT" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Caterpillar</div>
+                    <div class="product-name">CAT Work Boots</div>
+                    <div class="product-price">$129.99</div>
+                </div>
+            </div>
+
+            <!-- Reebok Classic -->
+            <div class="product-card" onclick="location.href='catalogo.html#producto-4'">
+                <div class="product-image-container">
+                    <img src="foto1reeb.jpg" alt="Reebok" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Reebok</div>
+                    <div class="product-name">Reebok Classic Work</div>
+                    <div class="product-price">$99.99</div>
+                </div>
+            </div>
+
+            <!-- Nunbush -->
+            <div class="product-card" onclick="location.href='catalogo.html#producto-5'">
+                <div class="product-image-container">
+                    <img src="nunbush1.jpg" alt="Nunbush" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Nunbush</div>
+                    <div class="product-name">Nunbush Comfort Work</div>
+                    <div class="product-price">$69.99</div>
+                </div>
+            </div>
+
+            <!-- New Balance 574 -->
+            <div class="product-card" onclick="location.href='catalogo.html#producto-6'">
+                <div class="product-image-container">
+                    <span class="product-badge">New</span>
+                    <img src="newbalance1.jpg" alt="New Balance" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">New Balance</div>
+                    <div class="product-name">NB 574 Work</div>
+                    <div class="product-price">$109.99</div>
+                </div>
+            </div>
+
+            <!-- NB Pro Work -->
+            <div class="product-card" onclick="location.href='catalogo.html#producto-7'">
+                <div class="product-image-container">
+                    <img src="newbalance4.jpg" alt="New Balance Pro" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">New Balance</div>
+                    <div class="product-name">NB Pro Work</div>
+                    <div class="product-price">$119.99</div>
+                </div>
+            </div>
+
+            <!-- Nautica -->
+            <div class="product-card" onclick="location.href='catalogo.html#producto-8'">
+                <div class="product-image-container">
+                    <img src="nautica1.jpg" alt="Nautica" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Nautica</div>
+                    <div class="product-name">Nautica Navigator Work</div>
+                    <div class="product-price">$89.99</div>
+                </div>
+            </div>
+
+            <!-- Reebok Runner -->
+            <div class="product-card" onclick="location.href='catalogo.html#producto-9'">
+                <div class="product-image-container">
+                    <img src="reebok1.jpg" alt="Reebok Runner" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Reebok</div>
+                    <div class="product-name">Reebok Runner Work</div>
+                    <div class="product-price">$74.99</div>
+                </div>
+            </div>
+
+            <!-- Cross -->
+            <div class="product-card" onclick="location.href='catalogo.html#producto-10'">
+                <div class="product-image-container">
+                    <img src="cross1.jpg" alt="Cross" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Cross</div>
+                    <div class="product-name">Cross Training Work</div>
+                    <div class="product-price">$67.99</div>
+                </div>
+            </div>
+
+            <!-- Keen -->
+            <div class="product-card" onclick="location.href='catalogo.html#producto-11'">
+                <div class="product-image-container">
+                    <img src="keen1.jpg" alt="Keen" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Keen</div>
+                    <div class="product-name">Keen Utility Work</div>
+                    <div class="product-price">$84.99</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Need Help?</h3>
+                    <p>Our team is here to assist you with any questions about the safety footwear program.</p>
+                    
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <span>safety@safetyshoes.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <span>HR Department - Main Office</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>🕐</span>
+                        <span>Mon-Fri: 8:00 AM - 5:00 PM</span>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form onsubmit="event.preventDefault(); alert('Message sent!');">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Employee ID</label>
+                            <input type="text" placeholder="Employee number" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea placeholder="How can we help?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-add">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="catalogo.html">Catalog</a>
+            <a href="#contact">Contact</a>
+            <a href="#" onclick="showTerms(); return false;">Terms</a>
+        </div>
+        <p>&copy; 2026 Safety Shoe's. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sideMenu').classList.toggle('active');
+            document.getElementById('overlay').classList.toggle('active');
+            document.getElementById('menuToggle').classList.toggle('active');
+        }
+
+        function closeMenu() {
+            document.getElementById('sideMenu').classList.remove('active');
+            document.getElementById('overlay').classList.remove('active');
+            document.getElementById('menuToggle').classList.remove('active');
+        }
+
+        function showTerms() {
+            alert('OSHA TERMS AND CONDITIONS\n\n' +
+                  '1. All safety footwear must comply with ASTM F2413-18 standards.\n' +
+                  '2. Employees must wear approved footwear in all production and warehouse areas.\n' +
+                  '3. Employer will provide reimbursement up to $150 USD per pair every 12 months.\n' +
+                  '4. Footwear must have safety toe (steel, composite, or aluminum).\n' +
+                  '5. Slip-resistant outsole (SRC certification).\n' +
+                  '6. Electrical hazard (EH) protection when applicable.\n' +
+                  '7. Non-compliance may result in disciplinary action.\n\n' +
+                  'For more information, consult the employee handbook or contact HR.');
+        }
+    </script>
+</body>
+</html>
