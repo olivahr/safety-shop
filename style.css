@@ -1321,3 +1321,16 @@ footer p {
 * {
     transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
+
+/* Active button state */
+.purchase-btn.active {
+    background: linear-gradient(135deg, var(--accent) 0%, #d4af37 100%);
+    box-shadow: 0 10px 20px rgba(201, 162, 39, 0.3);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.purchase-btn.active:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(201, 162, 39, 0.4);
+}
