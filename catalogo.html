@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="description" content="Complete catalog of OSHA-certified safety footwear. Steel toe, composite toe and aluminum toe options. ASTM F2413-18 certified. Ships in 14–21 business days.">
+    <title>Catalog – Safety Shoes | Iron Step LLC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SHIPPING BANNER -->
+    <div class="shipping-banner">
+        📦 Ships 1–3 days · <span>Delivered in 14–21 business days · Free shipping over $75 · 30-day returns</span>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- SIDE MENU -->
+    <div class="side-menu" id="sideMenu" role="navigation" aria-label="Main menu">
+        <div class="side-menu-inner">
+            <button class="side-menu-close" id="sideMenuClose" aria-label="Close menu">✕</button>
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="index.html#shipping">Shipping &amp; Delivery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="#" data-modal="termsModal">Terms &amp; Conditions</a></li>
+                <li><a href="#" data-modal="privacyModal">Privacy Policy</a></li>
+                <li><a href="#" data-modal="refundModal">Refund Policy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="menu-left">
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="sideMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="logo-center">
+                <div class="logo-text">Safety Shoes</div>
+                <div class="logo-subtitle">Iron Step LLC</div>
+            </div>
+            <div class="nav-right"></div>
+        </nav>
+    </header>
+
+    <!-- PAGE BODY -->
+    <div class="page-body">
+
+        <!-- CATALOG HEADER -->
+        <div class="catalog-header" id="catalog">
+            <h1>Complete Catalog</h1>
+            <p>OSHA-approved · ASTM F2413-18 certified · All prices in USD · Delivery 14–21 business days</p>
+        </div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- PRODUCT 1 – Safety Shoes Industrial (Women's) -->
+        <!-- ══════════════════════════════════════════════ -->
+        <div class="product-detail" id="producto-1" data-payment-link="PAYMENT_LINK_1">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <div class="main-image-container">
+                        <img src="safetyshoes1.jpg" alt="Safety Shoes Industrial Women's – Steel Toe ASTM F2413 OSHA Compliant" class="main-image" id="main-1">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="safetyshoes1.jpg" class="thumbnail active" onclick="changeImage(1,'safetyshoes1.jpg',this)" alt="View 1">
+                        <img src="safetyshoes2.jpg" class="thumbnail" onclick="changeImage(1,'safetyshoes2.jpg',this)" alt="View 2">
+                        <img src="safetyshoes3.jpg" class="thumbnail" onclick="changeImage(1,'safetyshoes3.jpg',this)" alt="View 3">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Women's Industrial Grade</span>
+                    <div class="delivery-badge">🚚 Delivered in 14–21 business days</div>
+                    <h2 class="product-title">Safety Shoes Industrial (Women's)</h2>
+                    <p class="product-subtitle">Women's steel toe protection for warehouse environments</p>
+                    <div class="product-price-big">89.99</div>
+                    <p class="product-description">Women's premium safety shoes with reinforced steel toe cap. Slip-resistant outsole meets OSHA standards. Electrical hazard (EH) protection. Breathable mesh lining for 8+ hour shifts. Upper: synthetic leather + breathable mesh. Outsole: oil and chemical resistant rubber.</p>
+                    <ul class="product-features">
+                        <li>Steel toe – ASTM F2413-18</li>
+                        <li>SRC slip-resistant outsole</li>
+                        <li>Electrical hazard (EH) rated</li>
+                        <li>Oil &amp; chemical resistant</li>
+                        <li>Women's anatomical fit</li>
+                        <li>8+ hour comfort lining</li>
+                    </ul>
+                    <div class="size-section">
+                        <label for="size-1">US Size – Women's</label>
+                        <select id="size-1" class="size-select" onchange="enableBtn(1)">
+                            <option value="" disabled selected>Select your size</option>
+                            <option>5</option><option>5.5</option><option>6</option><option>6.5</option>
+                            <option>7</option><option>7.5</option><option>8</option><option>8.5</option>
+                            <option>9</option><option>9.5</option><option>10</option><option>10.5</option><option>11</option>
+                        </select>
+                    </div>
+                    <button class="purchase-btn" id="btn-1" disabled onclick="buyNow(1)">Buy Now – $89.99</button>
+                    <p class="purchase-note">🔒 Secure checkout &nbsp;·&nbsp; 30-day returns &nbsp;·&nbsp; <a href="#" data-modal="refundModal">Refund Policy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- PRODUCT 2 – Safe Shoes Pro (Unisex)           -->
+        <!-- ══════════════════════════════════════════════ -->
+        <div class="product-detail" id="producto-2" data-payment-link="PAYMENT_LINK_2">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <div class="main-image-container">
+                        <img src="safeshoes1.jpg" alt="Safe Shoes Pro Unisex – Composite Toe Anti-Static Work Shoe" class="main-image" id="main-2">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="safeshoes1.jpg" class="thumbnail active" onclick="changeImage(2,'safeshoes1.jpg',this)" alt="View 1">
+                        <img src="safeshoes2.jpg" class="thumbnail" onclick="changeImage(2,'safeshoes2.jpg',this)" alt="View 2">
+                        <img src="safeshoes3.jpg" class="thumbnail" onclick="changeImage(2,'safeshoes3.jpg',this)" alt="View 3">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Unisex Industrial Grade</span>
+                    <div class="delivery-badge">🚚 Delivered in 14–21 business days</div>
+                    <h2 class="product-title">Safe Shoes Pro (Unisex)</h2>
+                    <p class="product-subtitle">Lightweight composite toe for assembly line workers</p>
+                    <div class="product-price-big">79.99</div>
+                    <p class="product-description">Professional safety footwear with composite toe — 30% lighter than steel. Anti-static (ESD) protection. Breathable mesh upper for long shifts. Upper: engineered mesh + synthetic overlay. Outsole: oil-resistant rubber with puncture-resistant midsole plate.</p>
+                    <ul class="product-features">
+                        <li>Composite toe – ASTM F2413-18</li>
+                        <li>Anti-static (ESD) technology</li>
+                        <li>Breathable mesh upper</li>
+                        <li>Puncture-resistant midsole</li>
+                        <li>Oil-resistant outsole</li>
+                        <li>Unisex – men's sizing</li>
+                    </ul>
+                    <div class="size-section">
+                        <label for="size-2">US Size – Unisex (Men's Sizing)</label>
+                        <select id="size-2" class="size-select" onchange="enableBtn(2)">
+                            <option value="" disabled selected>Select your size</option>
+                            <option>6</option><option>6.5</option><option>7</option><option>7.5</option>
+                            <option>8</option><option>8.5</option><option>9</option><option>9.5</option>
+                            <option>10</option><option>10.5</option><option>11</option><option>11.5</option>
+                            <option>12</option><option>13</option><option>14</option>
+                        </select>
+                    </div>
+                    <button class="purchase-btn" id="btn-2" disabled onclick="buyNow(2)">Buy Now – $79.99</button>
+                    <p class="purchase-note">🔒 Secure checkout &nbsp;·&nbsp; 30-day returns &nbsp;·&nbsp; <a href="#" data-modal="refundModal">Refund Policy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- PRODUCT 3 – CAT Work Boots (Unisex)           -->
+        <!-- ══════════════════════════════════════════════ -->
+        <div class="product-detail" id="producto-3" data-payment-link="PAYMENT_LINK_3">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <div class="main-image-container">
+                        <img src="foto1cat.jpg" alt="CAT Work Boots Unisex – Full-Grain Leather Goodyear Welt EH Rated" class="main-image" id="main-3">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="foto1cat.jpg" class="thumbnail active" onclick="changeImage(3,'foto1cat.jpg',this)" alt="View 1">
+                        <img src="foto2cat.jpg" class="thumbnail" onclick="changeImage(3,'foto2cat.jpg',this)" alt="View 2">
+                        <img src="foto3cat.jpg" class="thumbnail" onclick="changeImage(3,'foto3cat.jpg',this)" alt="View 3">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Unisex Premium</span>
+                    <div class="delivery-badge">🚚 Delivered in 14–21 business days</div>
+                    <h2 class="product-title">CAT Work Boots (Unisex)</h2>
+                    <p class="product-subtitle">Heavy-duty industrial boots for demanding environments</p>
+                    <div class="product-price-big">129.99</div>
+                    <p class="product-description">Rugged work boots for heavy industrial use. Full-grain leather upper with water-resistant treatment. Goodyear welt construction for long-term durability. Steel shank for torsional stability. EH rated. Upper: full-grain leather. Outsole: slip-resistant rubber, SRC rated.</p>
+                    <ul class="product-features">
+                        <li>Full-grain leather upper</li>
+                        <li>Steel shank for stability</li>
+                        <li>Goodyear welt construction</li>
+                        <li>Electrical hazard (EH) rated</li>
+                        <li>SRC slip-resistant outsole</li>
+                        <li>90-day comfort guarantee</li>
+                    </ul>
+                    <div class="size-section">
+                        <label for="size-3">US Size – Unisex (Men's Sizing)</label>
+                        <select id="size-3" class="size-select" onchange="enableBtn(3)">
+                            <option value="" disabled selected>Select your size</option>
+                            <option>7</option><option>7.5</option><option>8</option><option>8.5</option>
+                            <option>9</option><option>9.5</option><option>10</option><option>10.5</option>
+                            <option>11</option><option>11.5</option><option>12</option><option>13</option>
+                            <option>14</option><option>15</option>
+                        </select>
+                    </div>
+                    <button class="purchase-btn" id="btn-3" disabled onclick="buyNow(3)">Buy Now – $129.99</button>
+                    <p class="purchase-note">🔒 Secure checkout &nbsp;·&nbsp; 30-day returns &nbsp;·&nbsp; <a href="#" data-modal="refundModal">Refund Policy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- PRODUCT 4 – Reebok Classic Work (Men's)       -->
+        <!-- ══════════════════════════════════════════════ -->
+        <div class="product-detail" id="producto-4" data-payment-link="PAYMENT_LINK_4">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <div class="main-image-container">
+                        <img src="foto1reeb.jpg" alt="Reebok Classic Work Men's – Aluminum Toe Memory Foam ASTM F2413" class="main-image" id="main-4">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="foto1reeb.jpg" class="thumbnail active" onclick="changeImage(4,'foto1reeb.jpg',this)" alt="View 1">
+                        <img src="foto2reeb.jpg" class="thumbnail" onclick="changeImage(4,'foto2reeb.jpg',this)" alt="View 2">
+                        <img src="foto3reeb.jpg" class="thumbnail" onclick="changeImage(4,'foto3reeb.jpg',this)" alt="View 3">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Men's Athletic</span>
+                    <div class="delivery-badge">🚚 Delivered in 14–21 business days</div>
+                    <h2 class="product-title">Reebok Classic Work (Men's)</h2>
+                    <p class="product-subtitle">Athletic-style safety shoe for all-day comfort</p>
+                    <div class="product-price-big">99.99</div>
+                    <p class="product-description">Classic Reebok styling with OSHA-compliant safety. Aluminum toe is 30% lighter than steel while meeting ASTM F2413. Memory foam insole for superior cushioning. Flex grooves allow natural movement. Upper: synthetic leather + mesh. Outsole: slip-resistant rubber.</p>
+                    <ul class="product-features">
+                        <li>Aluminum toe – ASTM F2413-18</li>
+                        <li>30% lighter than steel</li>
+                        <li>Memory foam insole</li>
+                        <li>Flex grooves for mobility</li>
+                        <li>Slip-resistant outsole</li>
+                        <li>Men's anatomical fit</li>
+                    </ul>
+                    <div class="size-section">
+                        <label for="size-4">US Size – Men's</label>
+                        <select id="size-4" class="size-select" onchange="enableBtn(4)">
+                            <option value="" disabled selected>Select your size</option>
+                            <option>7</option><option>7.5</option><option>8</option><option>8.5</option>
+                            <option>9</option><option>9.5</option><option>10</option><option>10.5</option>
+                            <option>11</option><option>11.5</option><option>12</option><option>13</option><option>14</option>
+                        </select>
+                    </div>
+                    <button class="purchase-btn" id="btn-4" disabled onclick="buyNow(4)">Buy Now – $99.99</button>
+                    <p class="purchase-note">🔒 Secure checkout &nbsp;·&nbsp; 30-day returns &nbsp;·&nbsp; <a href="#" data-modal="refundModal">Refund Policy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- PRODUCT 5 – Nunbush Comfort Work (Unisex)     -->
+        <!-- ══════════════════════════════════════════════ -->
+        <div class="product-detail" id="producto-5" data-payment-link="PAYMENT_LINK_5">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <div class="main-image-container">
+                        <img src="nunbush1.jpg" alt="Nunbush Comfort Work Unisex – Steel Toe Dual-Density Wide Toe Box" class="main-image" id="main-5">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="nunbush1.jpg" class="thumbnail active" onclick="changeImage(5,'nunbush1.jpg',this)" alt="View 1">
+                        <img src="nunbush2.jpg" class="thumbnail" onclick="changeImage(5,'nunbush2.jpg',this)" alt="View 2">
+                        <img src="nunbush3.jpg" class="thumbnail" onclick="changeImage(5,'nunbush3.jpg',this)" alt="View 3">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Unisex Comfort</span>
+                    <div class="delivery-badge">🚚 Delivered in 14–21 business days</div>
+                    <h2 class="product-title">Nunbush Comfort Work (Unisex)</h2>
+                    <p class="product-subtitle">Maximum comfort for 10+ hour warehouse shifts</p>
+                    <div class="product-price-big">69.99</div>
+                    <p class="product-description">Engineered for workers on their feet all day. Dual-density midsole absorbs heel and forefoot impact. Extra-wide toe box reduces pressure and fatigue. Removable insole compatible with orthotics. Upper: synthetic leather. Outsole: slip-resistant rubber.</p>
+                    <ul class="product-features">
+                        <li>Steel toe – ASTM F2413-18</li>
+                        <li>Dual-density midsole</li>
+                        <li>Extra wide toe box</li>
+                        <li>Removable orthotic-ready insole</li>
+                        <li>Slip-resistant outsole</li>
+                        <li>Unisex – men's sizing</li>
+                    </ul>
+                    <div class="size-section">
+                        <label for="size-5">US Size – Unisex (Men's Sizing)</label>
+                        <select id="size-5" class="size-select" onchange="enableBtn(5)">
+                            <option value="" disabled selected>Select your size</option>
+                            <option>6</option><option>6.5</option><option>7</option><option>7.5</option>
+                            <option>8</option><option>8.5</option><option>9</option><option>9.5</option>
+                            <option>10</option><option>10.5</option><option>11</option><option>11.5</option>
+                            <option>12</option><option>13</option>
+                        </select>
+                    </div>
+                    <button class="purchase-btn" id="btn-5" disabled onclick="buyNow(5)">Buy Now – $69.99</button>
+                    <p class="purchase-note">🔒 Secure checkout &nbsp;·&nbsp; 30-day returns &nbsp;·&nbsp; <a href="#" data-modal="refundModal">Refund Policy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- PRODUCT 6 – NB 574 Work (Women's)             -->
+        <!-- ══════════════════════════════════════════════ -->
+        <div class="product-detail" id="producto-6" data-payment-link="PAYMENT_LINK_6">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <div class="main-image-container">
+                        <img src="newbalance1.jpg" alt="New Balance NB 574 Work Women's – Composite Toe ENCAP Midsole EH Rated" class="main-image" id="main-6">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="newbalance1.jpg" class="thumbnail active" onclick="changeImage(6,'newbalance1.jpg',this)" alt="View 1">
+                        <img src="newbalance2.jpg" class="thumbnail" onclick="changeImage(6,'newbalance2.jpg',this)" alt="View 2">
+                        <img src="newbalance3.jpg" class="thumbnail" onclick="changeImage(6,'newbalance3.jpg',this)" alt="View 3">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Women's Athletic</span>
+                    <div class="delivery-badge">🚚 Delivered in 14–21 business days</div>
+                    <h2 class="product-title">NB 574 Work (Women's)</h2>
+                    <p class="product-subtitle">Iconic athletic style with full OSHA compliance</p>
+                    <div class="product-price-big">109.99</div>
+                    <p class="product-description">The legendary 574 silhouette redesigned for the workplace. Composite toe meets ASTM F2413. ENCAP midsole combines polyurethane rim with EVA core for lasting support. EH rated. Upper: premium suede + breathable mesh. Outsole: non-marking slip-resistant rubber.</p>
+                    <ul class="product-features">
+                        <li>Composite toe – ASTM F2413-18</li>
+                        <li>ENCAP midsole technology</li>
+                        <li>Suede + breathable mesh upper</li>
+                        <li>Electrical hazard (EH) rated</li>
+                        <li>Non-marking outsole</li>
+                        <li>Women's anatomical fit</li>
+                    </ul>
+                    <div class="size-section">
+                        <label for="size-6">US Size – Women's</label>
+                        <select id="size-6" class="size-select" onchange="enableBtn(6)">
+                            <option value="" disabled selected>Select your size</option>
+                            <option>5</option><option>5.5</option><option>6</option><option>6.5</option>
+                            <option>7</option><option>7.5</option><option>8</option><option>8.5</option>
+                            <option>9</option><option>9.5</option><option>10</option><option>10.5</option><option>11</option>
+                        </select>
+                    </div>
+                    <button class="purchase-btn" id="btn-6" disabled onclick="buyNow(6)">Buy Now – $109.99</button>
+                    <p class="purchase-note">🔒 Secure checkout &nbsp;·&nbsp; 30-day returns &nbsp;·&nbsp; <a href="#" data-modal="refundModal">Refund Policy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- PRODUCT 7 – NB Pro Work (Unisex)              -->
+        <!-- ══════════════════════════════════════════════ -->
+        <div class="product-detail" id="producto-7" data-payment-link="PAYMENT_LINK_7">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <div class="main-image-container">
+                        <img src="newbalance4.jpg" alt="New Balance NB Pro Work Unisex – Alloy Toe Fresh Foam SRC Rated" class="main-image" id="main-7">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="newbalance4.jpg" class="thumbnail active" onclick="changeImage(7,'newbalance4.jpg',this)" alt="View 1">
+                        <img src="newbalance5.jpg" class="thumbnail" onclick="changeImage(7,'newbalance5.jpg',this)" alt="View 2">
+                        <img src="newbalance6.jpg" class="thumbnail" onclick="changeImage(7,'newbalance6.jpg',this)" alt="View 3">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Unisex Professional</span>
+                    <div class="delivery-badge">🚚 Delivered in 14–21 business days</div>
+                    <h2 class="product-title">NB Pro Work (Unisex)</h2>
+                    <p class="product-subtitle">Professional-grade protection for demanding workplaces</p>
+                    <div class="product-price-big">119.99</div>
+                    <p class="product-description">Professional series for demanding environments. Fresh Foam cushioning for all-day comfort. Alloy toe is 50% lighter than steel while meeting ASTM F2413. SRC slip-rated outsole tested on ceramic tile and steel. Upper: engineered mesh + synthetic overlays.</p>
+                    <ul class="product-features">
+                        <li>Alloy toe – ASTM F2413-18</li>
+                        <li>50% lighter than steel</li>
+                        <li>Fresh Foam midsole cushioning</li>
+                        <li>SRC slip-rated outsole</li>
+                        <li>Engineered mesh upper</li>
+                        <li>Unisex – men's sizing</li>
+                    </ul>
+                    <div class="size-section">
+                        <label for="size-7">US Size – Unisex (Men's Sizing)</label>
+                        <select id="size-7" class="size-select" onchange="enableBtn(7)">
+                            <option value="" disabled selected>Select your size</option>
+                            <option>7</option><option>7.5</option><option>8</option><option>8.5</option>
+                            <option>9</option><option>9.5</option><option>10</option><option>10.5</option>
+                            <option>11</option><option>11.5</option><option>12</option><option>13</option><option>14</option>
+                        </select>
+                    </div>
+                    <button class="purchase-btn" id="btn-7" disabled onclick="buyNow(7)">Buy Now – $119.99</button>
+                    <p class="purchase-note">🔒 Secure checkout &nbsp;·&nbsp; 30-day returns &nbsp;·&nbsp; <a href="#" data-modal="refundModal">Refund Policy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- PRODUCT 8 – Nautica Navigator Work (Men's)    -->
+        <!-- ══════════════════════════════════════════════ -->
+        <div class="product-detail" id="producto-8" data-payment-link="PAYMENT_LINK_8">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <div class="main-image-container">
+                        <img src="nautica1.jpg" alt="Nautica Navigator Work Men's – Water-Resistant Leather Steel Toe Non-Marking" class="main-image" id="main-8">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="nautica1.jpg" class="thumbnail active" onclick="changeImage(8,'nautica1.jpg',this)" alt="View 1">
+                        <img src="nautica2.jpg" class="thumbnail" onclick="changeImage(8,'nautica2.jpg',this)" alt="View 2">
+                        <img src="nautica3.jpg" class="thumbnail" onclick="changeImage(8,'nautica3.jpg',this)" alt="View 3">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Men's Casual Work</span>
+                    <div class="delivery-badge">🚚 Delivered in 14–21 business days</div>
+                    <h2 class="product-title">Nautica Navigator Work (Men's)</h2>
+                    <p class="product-subtitle">Professional nautical-inspired design with full safety</p>
+                    <div class="product-price-big">89.99</div>
+                    <p class="product-description">Water-resistant treated leather repels spills. Stain-resistant finish maintains appearance. Steel toe meets ASTM F2413. Non-marking outsole ideal for clean-floor environments. Upper: water-resistant leather. Outsole: non-marking slip-resistant rubber.</p>
+                    <ul class="product-features">
+                        <li>Steel toe – ASTM F2413-18</li>
+                        <li>Water-resistant leather</li>
+                        <li>Stain-resistant coating</li>
+                        <li>Non-marking outsole</li>
+                        <li>Cushioned EVA footbed</li>
+                        <li>Men's anatomical fit</li>
+                    </ul>
+                    <div class="size-section">
+                        <label for="size-8">US Size – Men's</label>
+                        <select id="size-8" class="size-select" onchange="enableBtn(8)">
+                            <option value="" disabled selected>Select your size</option>
+                            <option>7</option><option>7.5</option><option>8</option><option>8.5</option>
+                            <option>9</option><option>9.5</option><option>10</option><option>10.5</option>
+                            <option>11</option><option>11.5</option><option>12</option><option>13</option><option>14</option>
+                        </select>
+                    </div>
+                    <button class="purchase-btn" id="btn-8" disabled onclick="buyNow(8)">Buy Now – $89.99</button>
+                    <p class="purchase-note">🔒 Secure checkout &nbsp;·&nbsp; 30-day returns &nbsp;·&nbsp; <a href="#" data-modal="refundModal">Refund Policy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- PRODUCT 9 – Reebok Runner Work (Unisex)       -->
+        <!-- ══════════════════════════════════════════════ -->
+        <div class="product-detail" id="producto-9" data-payment-link="PAYMENT_LINK_9">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <div class="main-image-container">
+                        <img src="reebok1.jpg" alt="Reebok Runner Work Unisex – Aluminum Toe Floatride Energy Foam" class="main-image" id="main-9">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="reebok1.jpg" class="thumbnail active" onclick="changeImage(9,'reebok1.jpg',this)" alt="View 1">
+                        <img src="reebok2.jpg" class="thumbnail" onclick="changeImage(9,'reebok2.jpg',this)" alt="View 2">
+                        <img src="reebok3.jpg" class="thumbnail" onclick="changeImage(9,'reebok3.jpg',this)" alt="View 3">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Unisex Running-Style</span>
+                    <div class="delivery-badge">🚚 Delivered in 14–21 business days</div>
+                    <h2 class="product-title">Reebok Runner Work (Unisex)</h2>
+                    <p class="product-subtitle">Ultra-lightweight athletic safety for active workplaces</p>
+                    <div class="product-price-big">74.99</div>
+                    <p class="product-description">Running shoe performance with industrial safety standards. Floatride Energy foam for responsive cushioning. Aluminum toe meets ASTM F2413. Engineered mesh maximizes breathability. Upper: engineered mesh + synthetic. Outsole: high-abrasion slip-resistant rubber.</p>
+                    <ul class="product-features">
+                        <li>Aluminum toe – ASTM F2413-18</li>
+                        <li>Floatride Energy foam midsole</li>
+                        <li>Engineered mesh upper</li>
+                        <li>High-abrasion rubber outsole</li>
+                        <li>SRC slip-resistant rated</li>
+                        <li>Unisex – men's sizing</li>
+                    </ul>
+                    <div class="size-section">
+                        <label for="size-9">US Size – Unisex (Men's Sizing)</label>
+                        <select id="size-9" class="size-select" onchange="enableBtn(9)">
+                            <option value="" disabled selected>Select your size</option>
+                            <option>6</option><option>6.5</option><option>7</option><option>7.5</option>
+                            <option>8</option><option>8.5</option><option>9</option><option>9.5</option>
+                            <option>10</option><option>10.5</option><option>11</option><option>11.5</option>
+                            <option>12</option><option>13</option>
+                        </select>
+                    </div>
+                    <button class="purchase-btn" id="btn-9" disabled onclick="buyNow(9)">Buy Now – $74.99</button>
+                    <p class="purchase-note">🔒 Secure checkout &nbsp;·&nbsp; 30-day returns &nbsp;·&nbsp; <a href="#" data-modal="refundModal">Refund Policy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- PRODUCT 10 – Cross Training Work (Unisex)     -->
+        <!-- ══════════════════════════════════════════════ -->
+        <div class="product-detail" id="producto-10" data-payment-link="PAYMENT_LINK_10">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <div class="main-image-container">
+                        <img src="cross1.jpg" alt="Cross Training Work Unisex – Composite Toe Lateral Support Flat Sole" class="main-image" id="main-10">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="cross1.jpg" class="thumbnail active" onclick="changeImage(10,'cross1.jpg',this)" alt="View 1">
+                        <img src="cross2.jpg" class="thumbnail" onclick="changeImage(10,'cross2.jpg',this)" alt="View 2">
+                        <img src="cross3.jpg" class="thumbnail" onclick="changeImage(10,'cross3.jpg',this)" alt="View 3">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Unisex Cross-Function</span>
+                    <div class="delivery-badge">🚚 Delivered in 14–21 business days</div>
+                    <h2 class="product-title">Cross Training Work (Unisex)</h2>
+                    <p class="product-subtitle">Multi-purpose safety footwear for cross-functional teams</p>
+                    <div class="product-price-big">67.99</div>
+                    <p class="product-description">For workers who lift, operate equipment, and move across surfaces. Flat stable sole distributes weight evenly during lifts. Flexible forefoot grooves allow natural movement. Lateral support prevents ankle roll. Upper: synthetic leather + mesh. Outsole: slip-resistant rubber.</p>
+                    <ul class="product-features">
+                        <li>Composite toe – ASTM F2413-18</li>
+                        <li>Flat stable base for lifting</li>
+                        <li>Flexible forefoot grooves</li>
+                        <li>Lateral ankle support</li>
+                        <li>Slip-resistant outsole</li>
+                        <li>Unisex – men's sizing</li>
+                    </ul>
+                    <div class="size-section">
+                        <label for="size-10">US Size – Unisex (Men's Sizing)</label>
+                        <select id="size-10" class="size-select" onchange="enableBtn(10)">
+                            <option value="" disabled selected>Select your size</option>
+                            <option>6</option><option>6.5</option><option>7</option><option>7.5</option>
+                            <option>8</option><option>8.5</option><option>9</option><option>9.5</option>
+                            <option>10</option><option>10.5</option><option>11</option><option>11.5</option>
+                            <option>12</option><option>13</option>
+                        </select>
+                    </div>
+                    <button class="purchase-btn" id="btn-10" disabled onclick="buyNow(10)">Buy Now – $67.99</button>
+                    <p class="purchase-note">🔒 Secure checkout &nbsp;·&nbsp; 30-day returns &nbsp;·&nbsp; <a href="#" data-modal="refundModal">Refund Policy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- PRODUCT 11 – Keen Utility Work (Unisex)       -->
+        <!-- ══════════════════════════════════════════════ -->
+        <div class="product-detail" id="producto-11" data-payment-link="PAYMENT_LINK_11">
+            <div class="product-content">
+                <div class="image-gallery">
+                    <div class="main-image-container">
+                        <img src="keen1.jpg" alt="Keen Utility Work Unisex – Waterproof Asymmetrical Steel Toe Lug Outsole" class="main-image" id="main-11">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="keen1.jpg" class="thumbnail active" onclick="changeImage(11,'keen1.jpg',this)" alt="View 1">
+                        <img src="keen2.jpg" class="thumbnail" onclick="changeImage(11,'keen2.jpg',this)" alt="View 2">
+                        <img src="keen3.jpg" class="thumbnail" onclick="changeImage(11,'keen3.jpg',this)" alt="View 3">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Unisex Outdoor / Utility</span>
+                    <div class="delivery-badge">🚚 Delivered in 14–21 business days</div>
+                    <h2 class="product-title">Keen Utility Work (Unisex)</h2>
+                    <p class="product-subtitle">Waterproof outdoor-ready protection for tough terrain</p>
+                    <div class="product-price-big">84.99</div>
+                    <p class="product-description">Waterproof leather with KEEN.DRY membrane keeps feet dry. Asymmetrical steel toe gives roomier fit than standard caps. Multi-directional lug outsole grips mud, gravel, and wet surfaces. Locking metal D-ring hooks for secure lacing. Upper: waterproof leather. Outsole: lug rubber, oil and slip resistant.</p>
+                    <ul class="product-features">
+                        <li>Asymmetrical steel toe – ASTM F2413-18</li>
+                        <li>Waterproof + KEEN.DRY membrane</li>
+                        <li>Multi-directional lug outsole</li>
+                        <li>Oil &amp; slip-resistant sole</li>
+                        <li>Locking metal D-ring hooks</li>
+                        <li>Unisex – men's sizing</li>
+                    </ul>
+                    <div class="size-section">
+                        <label for="size-11">US Size – Unisex (Men's Sizing)</label>
+                        <select id="size-11" class="size-select" onchange="enableBtn(11)">
+                            <option value="" disabled selected>Select your size</option>
+                            <option>7</option><option>7.5</option><option>8</option><option>8.5</option>
+                            <option>9</option><option>9.5</option><option>10</option><option>10.5</option>
+                            <option>11</option><option>11.5</option><option>12</option><option>13</option><option>14</option>
+                        </select>
+                    </div>
+                    <button class="purchase-btn" id="btn-11" disabled onclick="buyNow(11)">Buy Now – $84.99</button>
+                    <p class="purchase-note">🔒 Secure checkout &nbsp;·&nbsp; 30-day returns &nbsp;·&nbsp; <a href="#" data-modal="refundModal">Refund Policy</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /page-body -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="#catalog">Catalog</a>
+            <a href="index.html#shipping">Shipping</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-legal-links">
+            <a href="#" data-modal="termsModal">Terms &amp; Conditions</a>
+            <a href="#" data-modal="privacyModal">Privacy Policy</a>
+            <a href="#" data-modal="refundModal">Refund Policy</a>
+        </div>
+        <p>&copy; 2026 Safety Shoes &mdash; Operated by Iron Step LLC. All rights reserved.</p>
+        <p>Iron Step LLC is an independent safety footwear retailer. All products meet ASTM F2413-18 OSHA standards.</p>
+    </footer>
+
+    <!-- ===== MODALS ===== -->
+
+    <div class="modal-overlay" id="termsModal" role="dialog" aria-modal="true" aria-label="Terms and Conditions">
+        <div class="modal-box">
+            <div class="modal-handle"></div>
+            <button class="modal-close" data-close="termsModal" aria-label="Close">✕</button>
+            <h2>Terms &amp; Conditions</h2>
+            <p><strong>Iron Step LLC — Safety Shoes</strong><br>Last updated: January 2026</p>
+            <h3>Company Information</h3>
+            <p>Safety Shoes is operated by Iron Step LLC, registered in the United States. Contact: support@safetyshoes.com | +1 (615) 553-6842.</p>
+            <h3>Products</h3>
+            <ul>
+                <li>All footwear meets ASTM F2413-18 OSHA safety standards.</li>
+                <li>Prices are in USD and final at the time of purchase. No hidden fees.</li>
+                <li>Product images are representative; minor color variations may occur.</li>
+            </ul>
+            <h3>OSHA Compliance</h3>
+            <ul>
+                <li>All models carry steel, composite, or aluminum toe protection.</li>
+                <li>Slip-resistant SRC certified outsoles on all models.</li>
+                <li>Electrical hazard (EH) rated options available.</li>
+            </ul>
+            <h3>Orders &amp; Payment</h3>
+            <ul>
+                <li>Orders processed within 1–3 business days after payment confirmation.</li>
+                <li>Payment collected securely at time of order.</li>
+                <li>Order confirmation email sent after each successful purchase.</li>
+            </ul>
+            <h3>Shipping &amp; Delivery</h3>
+            <ul>
+                <li>Orders ship within 1–3 business days of processing.</li>
+                <li>Estimated delivery: <strong>14–21 business days</strong> from shipment (Continental US).</li>
+                <li>Tracking number provided by email upon shipment.</li>
+                <li>Free shipping on all orders over $75.</li>
+                <li>Iron Step LLC is not liable for carrier delays beyond our control.</li>
+            </ul>
+            <h3>Limitation of Liability</h3>
+            <p>Iron Step LLC's liability is limited to the purchase price of the product.</p>
+            <h3>Governing Law</h3>
+            <p>Governed by the laws of the State of Tennessee, United States.</p>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="privacyModal" role="dialog" aria-modal="true" aria-label="Privacy Policy">
+        <div class="modal-box">
+            <div class="modal-handle"></div>
+            <button class="modal-close" data-close="privacyModal" aria-label="Close">✕</button>
+            <h2>Privacy Policy</h2>
+            <p><strong>Iron Step LLC — Safety Shoes</strong><br>Last updated: January 2026</p>
+            <h3>Information We Collect</h3>
+            <ul>
+                <li>Full name, email, and shipping address — for order processing and delivery.</li>
+                <li>Phone number — for order updates if needed.</li>
+                <li>Order reference — only if provided voluntarily.</li>
+                <li>Payment information — processed by PCI-compliant provider. We do not store card numbers.</li>
+                <li>Purchase history and product selections.</li>
+            </ul>
+            <h3>How We Use Your Information</h3>
+            <ul>
+                <li>To process and fulfill your orders.</li>
+                <li>To send shipping confirmation and tracking information.</li>
+                <li>To handle returns, exchanges, and customer service.</li>
+                <li>To comply with applicable legal obligations.</li>
+            </ul>
+            <h3>Data Sharing</h3>
+            <ul>
+                <li>We do <strong>not</strong> sell your personal data.</li>
+                <li>Data shared only with shipping carriers to fulfill your order.</li>
+                <li>Payment data handled exclusively by our PCI-compliant processor.</li>
+            </ul>
+            <h3>Data Retention &amp; Your Rights</h3>
+            <p>Records retained up to 3 years. To request access, correction, or deletion: support@safetyshoes.com.</p>
+            <h3>Cookies</h3>
+            <p>Essential cookies only. No advertising or tracking cookies.</p>
+            <h3>Contact</h3>
+            <p>Iron Step LLC · support@safetyshoes.com · +1 (615) 553-6842</p>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="refundModal" role="dialog" aria-modal="true" aria-label="Refund Policy">
+        <div class="modal-box">
+            <div class="modal-handle"></div>
+            <button class="modal-close" data-close="refundModal" aria-label="Close">✕</button>
+            <h2>Refund &amp; Return Policy</h2>
+            <p><strong>Iron Step LLC — Safety Shoes</strong><br>Last updated: January 2026</p>
+            <h3>Returns</h3>
+            <ul>
+                <li>Unworn items returnable within <strong>30 days</strong> of delivery.</li>
+                <li>Must be in original, undamaged packaging with all tags attached.</li>
+                <li>Worn items not eligible unless a manufacturing defect is present.</li>
+                <li>To start a return: support@safetyshoes.com with order number and reason.</li>
+            </ul>
+            <h3>Exchanges</h3>
+            <ul>
+                <li>Size exchanges within 30 days of delivery, subject to availability.</li>
+                <li>No extra shipping charge on the first size exchange per order.</li>
+            </ul>
+            <h3>Defective Items</h3>
+            <ul>
+                <li>Manufacturing defects covered for <strong>90 days</strong> from delivery.</li>
+                <li>Send photos + order number to support@safetyshoes.com. Defective items replaced or refunded at no charge.</li>
+            </ul>
+            <h3>Refund Process</h3>
+            <ul>
+                <li>Approved refunds processed within <strong>5–7 business days</strong> of receiving return.</li>
+                <li>Refunds issued to original payment method only.</li>
+                <li>Original shipping fees non-refundable unless return is due to our error or defective product.</li>
+            </ul>
+            <h3>Contact</h3>
+            <p>support@safetyshoes.com · +1 (615) 553-6842 · Mon–Fri 8 AM–5 PM CT</p>
+        </div>
+    </div>
+
+    <script>
+    (function() {
+        'use strict';
+
+        /* ── iOS-SAFE SCROLL LOCK ──
+           Using position:fixed on body causes iOS to jump to page top.
+           Save scrollY → apply fixed → restore on close.              */
+        var _scrollY = 0;
+        function lockScroll() {
+            _scrollY = window.scrollY;
+            document.body.style.top      = '-' + _scrollY + 'px';
+            document.body.style.position = 'fixed';
+            document.body.style.width    = '100%';
+            document.body.style.overflowY = 'scroll';
+        }
+        function unlockScroll() {
+            document.body.style.position  = '';
+            document.body.style.top       = '';
+            document.body.style.width     = '';
+            document.body.style.overflowY = '';
+            window.scrollTo(0, _scrollY);
+        }
+
+        /* ── MENU ── */
+        var toggle   = document.getElementById('menuToggle');
+        var sideMenu = document.getElementById('sideMenu');
+        var overlay  = document.getElementById('overlay');
+        var closeBtn = document.getElementById('sideMenuClose');
+        var isOpen   = false;
+
+        function openMenu() {
+            isOpen = true;
+            lockScroll();
+            sideMenu.classList.add('active');
+            overlay.classList.add('active');
+            toggle.classList.add('active');
+            toggle.setAttribute('aria-expanded', 'true');
+        }
+        function closeMenu() {
+            isOpen = false;
+            sideMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            toggle.classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
+            if (!document.querySelector('.modal-overlay.active')) unlockScroll();
+        }
+
+        toggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            isOpen ? closeMenu() : openMenu();
+        });
+        closeBtn.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+        sideMenu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() { closeMenu(); });
+        });
+
+        /* ── MODALS ── */
+        function openModal(id) {
+            var m = document.getElementById(id);
+            if (!m) return;
+            if (!isOpen) lockScroll();
+            m.classList.add('active');
+            var firstBtn = m.querySelector('button');
+            if (firstBtn) setTimeout(function(){ firstBtn.focus(); }, 50);
+        }
+        function closeModal(id) {
+            var m = document.getElementById(id);
+            if (!m) return;
+            m.classList.remove('active');
+            if (!isOpen && !document.querySelector('.modal-overlay.active')) unlockScroll();
+        }
+
+        document.querySelectorAll('[data-modal]').forEach(function(el) {
+            el.addEventListener('click', function(e) {
+                e.preventDefault();
+                closeMenu();
+                openModal(el.getAttribute('data-modal'));
+            });
+        });
+        document.querySelectorAll('[data-close]').forEach(function(el) {
+            el.addEventListener('click', function() {
+                closeModal(el.getAttribute('data-close'));
+            });
+        });
+        document.querySelectorAll('.modal-overlay').forEach(function(el) {
+            el.addEventListener('click', function(e) {
+                if (e.target === el) closeModal(el.id);
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay.active').forEach(function(m) { closeModal(m.id); });
+                if (isOpen) closeMenu();
+            }
+        });
+
+        /* ── IMAGE GALLERY ── */
+        window.changeImage = function(productId, src, thumb) {
+            var main = document.getElementById('main-' + productId);
+            if (main) main.src = src;
+            thumb.closest('.thumbnail-container').querySelectorAll('.thumbnail').forEach(function(t) {
+                t.classList.remove('active');
+            });
+            thumb.classList.add('active');
+        };
+
+        /* ── SIZE → ENABLE BUTTON (only requirement to unlock Buy Now) ── */
+        window.enableBtn = function(id) {
+            var sel = document.getElementById('size-' + id);
+            var btn = document.getElementById('btn-' + id);
+            if (sel && sel.value && btn) {
+                btn.disabled = false;
+                btn.classList.add('active');
+            }
+        };
+
+        /* ── BUY NOW — direct redirect, zero popups, zero extra steps ── */
+        window.buyNow = function(id) {
+            var el  = document.getElementById('producto-' + id);
+            var url = el ? el.getAttribute('data-payment-link') : '';
+            if (url && url.indexOf('PAYMENT_LINK') === -1 && url !== '') {
+                window.location.href = url;
+            }
+        };
+
+        /* ── SCROLL TO ANCHOR ON LOAD ── */
+        if (window.location.hash) {
+            var target = document.querySelector(window.location.hash);
+            if (target) {
+                setTimeout(function() {
+                    var headerH = document.querySelector('header') ? document.querySelector('header').offsetHeight : 64;
+                    var top = target.getBoundingClientRect().top + window.scrollY - headerH - 8;
+                    window.scrollTo({ top: top, behavior: 'smooth' });
+                }, 250);
+            }
+        }
+
+    })();
+    </script>
+
+</body>
+</html>
